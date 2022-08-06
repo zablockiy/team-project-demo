@@ -1,0 +1,90 @@
+@media screen and (min-width: 1200px) {
+    %section-desktop {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+
+
+// Заголовки секций 
+@media screen and (max-width: 767px) {
+    %title-mobile {
+        font-size: 34px;
+        line-height: 1.15;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    // Подзаголовки секций    
+    %subtitle-mobile {
+        font-size: 18px;
+        line-height: 1.17;
+         text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+
+
+// Заголовки секций 
+@media screen and (min-width: 768px) {
+    %title-tablet {
+        font-size: 48px;
+        line-height: 1.15;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    // Подзаголовки секций    
+    %subtitle-tablet {
+        font-size: 26px;
+        line-height: 1.15;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+// Заголовки секций 
+@media screen and (min-width: 1200px) {
+    %title-desktop {
+        font-size: 58px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+
+    // Подзаголовки секций    
+    %subtitle-desktop {
+        font-size: 30px;
+        line-height: 1.13;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+
+// Баттон ниже, для примера, можно тоже сделать
+
+
+// %button {
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.88;
+//     letter-spacing: 0.06em;
+//     border: none;
+//     border-radius: 4px;
+//     color: var(--text-white);
+//     background-color: var(--brand-color);
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     cursor: pointer;
+//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     cursor: pointer;
+
+//     &:hover,
+//     &:focus {
+//         background-color: var(--button-hover);
+//     }
+// }
+
