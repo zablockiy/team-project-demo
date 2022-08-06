@@ -1,0 +1,50 @@
+//   &::after {
+//       content: "";
+//       width: 24px;
+//       height: 24px;
+
+//       background-image: url(../images/icon-send.svg);
+//   }
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media screen and (min-width: 320px) {
+        max-width: 320px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+}
+
+.advant__number {
+    font-family: 'Titan One', sans-serif;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: #D41443;
+}
+
+.advant__txt {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.67;
+    color: #000000;
+}
+
