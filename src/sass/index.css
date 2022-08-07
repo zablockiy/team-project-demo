@@ -1,0 +1,139 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1, 94;
+  letter-spacing: 0.04em;
+  color: #907e82;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.advant__number {
+  font-family: "Titan One", sans-serif;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+.advant__txt {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.67;
+  color: #000000;
+}
+
+:root {
+  --brand-color: #D41443;
+  --white-color: #FFFFFF;
+  --text-white: #FFFFFF;
+  --text-black: #000000;
+  --text-gray: #907E82;
+  --text-pink: #FFA5BA;
+  --bg-hero: #FFB8CA;
+  --bg-hero-circle: #FFA5BA;
+  --bg-hover-btn: #ECEBEB;
+  --bg-product-first: #FFB8CA;
+  --bg-product-second: #F0D1A5;
+  --bg-product-third: #C2E297;
+  --bg-light-pink: #FFF5F6;
+  --bg-reviews: #FAFAFA;
+  --bg-cafe-contacts: #F0D1A5;
+  --bg-foodtruck-contacts: #C2E297;
+  --bg-location-btn: #D41342;
+  --bg-navigation: #E17992;
+  --icon-advant: #FFA5BA;
+  --social-icon: #FEA5BB;
+  --line-quotes-reviews: #E1E1E1;
+  --line-navigation: #E18298;
+  --red-dots-reviews: #C7133E;
+  --gray-dots-reviews: #D9D9D9;
+  --icon-home: #D31342;
+}/*# sourceMappingURL=index.css.map */
