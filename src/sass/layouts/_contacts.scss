@@ -1,0 +1,126 @@
+.contact__bg-color {
+background: #E5E5E5;
+}
+
+.contact__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+// .contact__list {
+    
+// }
+
+.contact__item {
+    background: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+}
+
+.caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: #FFFFFF;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.cafe {
+    width: 80px;
+    height: 16px;
+    background-color: #F0D1A5;
+    border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+        width: 73px;
+        height: 28px;
+    }
+}
+
+.food {
+    width: 130px;
+    height: 16px;
+    background: #C2E297;
+    border-radius: 4px;
+
+    @media screen and (min-width: 768px) {
+        width: 138px;
+        height: 28px;
+    }
+}
+
+.title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86%;
+    letter-spacing: 0.04em;
+    color: #000000;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+    }
+}
+
+.information__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.66;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.83;
+        letter-spacing: 0.04em;
+    }
+}
+
+.schedule__time {
+    font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        color: #FFA5BA;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.btn-r {
+    width: 162px;
+    height: 44px;
+    background: #D41342;
+    border-radius: 22px;
+
+    @media screen and (min-width: 768px) {
+        width: 192px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 198px;
+    }
+}
