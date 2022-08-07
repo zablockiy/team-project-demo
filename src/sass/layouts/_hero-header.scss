@@ -1,3 +1,5 @@
+// header
+
 .page-header {
   position: absolute;
   width: 100%;
@@ -26,7 +28,7 @@
   border: none;
   background-color: rgba(0, 0, 0, 0);
 
-  z-index: 5;
+  z-index: 15;
 
   &__cross {
     display: none;
@@ -52,6 +54,7 @@
 
 .mobile-menu {
   position: fixed;
+  z-index: 12;
   right: 0px;
   padding: 20px;
   width: 250px;
@@ -112,16 +115,31 @@
 // ======Hero=====
 
 .hero {
+  height: 502px;
   background-color: var(--bg-hero);
+}
+
+@media screen and (max-width: 768px) {
+  .hero__text,
+  .block-right,
+  .bottle-img,
+  .girl-img {
+    display: none;
+  }
 }
 
 .container-wrapper {
   position: relative;
 }
 
+.block-left {
+  position: absolute;
+  z-index: 8;
+}
+
 .hero__title {
   max-width: 218px;
-  padding-top: 197px;
+  padding-top: 190px;
 
   font-family: 'Titan One';
   font-style: normal;
@@ -141,22 +159,47 @@
 }
 
 .hero__button-list {
+  display: flex;
+  margin-top: 24px;
   padding-bottom: 158px;
 }
 
-@media screen and (max-width: 768px) {
-  .hero__text,
-  .block-right,
-  .bottle-img,
-  .girl-img {
-    display: none;
+.hero__button-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 8px;
   }
+}
+
+.hero__link {
+  padding: 8px 13px;
+  background-color: var(--brand-color);
+  border-radius: 20px;
+
+  font-size: 8px;
+  line-height: 1.25;
+  color: var(--white-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--bg-hover-btn);
+    color: var(--brand-color);
+  }
+}
+
+.hero__link-right {
+  background-color: var(--white-color);
+  color: var(--brand-color);
 }
 
 .icecream-img {
   position: absolute;
-  bottom: 0;
-  left: 150px;
+  left: 120px;
+  top: 91px;
+  z-index: 7;
   background-image: url(../images/hero-header/icecream-mobile.png);
   width: 171px;
   height: 410px;
