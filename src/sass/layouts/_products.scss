@@ -1,0 +1,127 @@
+.products {
+  background-color: var(--bg-products);
+
+  &__label {
+    margin-bottom: 15px;
+
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+
+    color: var(--text-pink);
+
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--brand-color);
+  }
+
+  &__item {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    max-width: 368px;
+    border-radius: 24px;
+    margin-top: 140px;
+
+    &::before {
+      margin-top: -140px;
+      margin-bottom: 20px;
+
+      width: 280px;
+      height: 280px;
+      content: '';
+      background: no-repeat scroll center/contain transparent;
+    }
+  }
+
+  &__item--ice-cream {
+    background-color: var(--bg-product-first);
+
+    &::before {
+      background-image: url(../images/products/product-pic1mob@1x.png);
+      background-image: url(../images/products/product-pic1mob@2x.png);
+    }
+  }
+
+  &__item--ice-coffee {
+    background-color: var(--bg-product-second);
+
+    &::before {
+      background-image: url(../images/products/product-pic2mob@1x.png);
+      background-image: url(../images/products/product-pic2mob@2x.png);
+    }
+  }
+
+  &__item--milkshakes {
+    background-color: var(--bg-product-third);
+
+    &::before {
+      background-image: url(../images/products/product-pic3mob@1x.png);
+      background-image: url(../images/products/product-pic3mob@2x.png);
+    }
+  }
+
+  &__sublist {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  
+    text-align: center;
+    text-transform: uppercase;
+  
+    color: var(--text-white);
+  
+    &::after {
+      content: '...';
+  
+      display: flex;
+      justify-content: center;
+  
+      margin-top: 32px;
+      margin-bottom: 32px;
+  
+      color: var(--white-color);
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 32px;
+    max-width: 200px;
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+  
+    text-align: center;
+  
+    color: var(--text-white);
+  }
+  
+  &__button {
+    border-radius: 50%;
+    border: 0;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+}
+
+
