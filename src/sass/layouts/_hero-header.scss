@@ -58,7 +58,7 @@
   right: 0px;
   padding: 20px;
   width: 250px;
-  height: 100vh;
+  height: 502px;
   background-color: var(--bg-navigation);
   transform: translateX(100%);
 
@@ -117,6 +117,7 @@
 .hero {
   height: 502px;
   background-color: var(--bg-hero);
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -203,4 +204,22 @@
   background-image: url(../images/hero-header/icecream-mobile.png);
   width: 171px;
   height: 410px;
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .icecream-img {
+    background-image: url(../images/hero-header/icecream-mobile@2x.png);
+    background-size: 100%;
+  }
+}
+
+.circle-img {
+  position: absolute;
+  top: 83px;
+  left: 36px;
+  display: block;
+  width: 346px;
+  height: 344px;
+  background-color: var(--bg-hero-circle);
+  border-radius: 50%;
 }
