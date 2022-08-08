@@ -135,6 +135,7 @@
   .hero__text,
   .block-right,
   .bottle-img,
+  .text-wrapper,
   .girl-img {
     display: none;
   }
@@ -145,14 +146,13 @@
 }
 
 .block-left {
+  top: 102px;
   position: absolute;
   z-index: 8;
 }
 
 .hero__title {
   max-width: 218px;
-  padding-top: 190px;
-
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
@@ -164,7 +164,6 @@
 
   @media screen and (min-width: 768px) {
     max-width: 162px;
-    padding-top: 102px;
     font-size: 22px;
   }
 }
