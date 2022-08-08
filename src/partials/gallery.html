@@ -1,41 +1,39 @@
-<section class="gallery">
-  <div class="gallery__container">
+<section id="gallery" class="gallery-pictures">
+  <div class="gallery-pictures__container">
+    <picture class="gallery-pictures__pic-1">
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/image-gallery/home-pic5-lg-5.jpg    1x,
+          ./images/image-gallery/home-pic5-lg-5@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/image-gallery/home-pic5-md-5.jpg    1x,
+          ./images/image-gallery/home-pic5-md-5@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/image-gallery/home-pic5-sm-5.jpg    1x,
+          ./images/image-gallery/home-pic5-sm-5@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <img
+        src="./images/image-gallery/home-pic5-lg-5.jpg"
+        alt="Тарелка с мороженым на подносе"
+        width="138"
+        height="138"
+      />
+    </picture>
     <div>
-      <picture>
-        <source
-          media="(min-width: 1200px)"
-          srcset="
-            ./images/image-gallery/home-pic5-lg-5.jpg    1x,
-            ./images/image-gallery/home-pic5-lg-5@2x.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/image-gallery/home-pic5-md-5.jpg    1x,
-            ./images/image-gallery/home-pic5-md-5@2x.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/image-gallery/home-pic5-sm-5.jpg    1x,
-            ./images/image-gallery/home-pic5-sm-5@2x.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <img
-          src="./images/image-gallery/home-pic5-lg-5.jpg"
-          alt="Тарелка с мороженым на подносе"
-          width="138"
-          height="138"
-        />
-      </picture>
-    </div>
-    <div>
-      <picture>
+      <picture class="gallery-pictures__pic-2">
         <source
           media="(min-width: 1200px)"
           srcset="
@@ -67,7 +65,7 @@
           height="138"
         />
       </picture>
-      <picture>
+      <picture class="gallery-pictures__pic-3">
         <source
           media="(min-width: 1200px)"
           srcset="
@@ -100,9 +98,8 @@
         />
       </picture>
     </div>
-
     <div>
-      <picture>
+      <picture class="gallery-pictures__pic-4">
         <source
           media="(min-width: 1200px)"
           srcset="
@@ -134,12 +131,12 @@
           height="283"
         />
       </picture>
-      <picture>
+      <picture class="gallery-pictures__pic-5">
         <source
           media="(min-width: 1200px)"
           srcset="
-            ./images/image-gallery/home-pic5-lg-7.jpg    1x,
-            ./images/image-gallery/home-pic5-lg-7@2x.jpg 2x
+            ./images/image-gallery/home-pic5-lg-7.jpg     1x,
+            ./images/image-gallery//home-pic5-lg-7@2x.jpg 2x
           "
           type="image/jpg"
         />
@@ -168,7 +165,7 @@
       </picture>
     </div>
     <div>
-      <picture>
+      <picture class="gallery-pictures__pic-6">
         <source
           media="(min-width: 1200px)"
           srcset="
@@ -200,12 +197,12 @@
           height="138"
         />
       </picture>
-      <picture>
+      <picture class="gallery-pictures__pic-7">
         <source
           media="(min-width: 1200px)"
           srcset="
             ./images/image-gallery/home-pic5-lg-8.jpg    1x,
-            ./images/image-gallery/home-pic5-lg-8@2x.jpg 2x
+            ./images/image-gallery/home-pic5-lg-8@2x.jpg
           "
           type="image/jpg"
         />
@@ -234,7 +231,7 @@
       </picture>
     </div>
     <div>
-      <picture>
+      <picture class="gallery-pictures__pic-8">
         <source
           media="(min-width: 1200px)"
           srcset="
@@ -266,7 +263,7 @@
           height="138"
         />
       </picture>
-      <picture>
+      <picture class="gallery-pictures__pic-9">
         <source
           media="(min-width: 1200px)"
           srcset="
@@ -299,40 +296,37 @@
         />
       </picture>
     </div>
-
-    <div>
-      <picture>
-        <source
-          media="(min-width: 1200px)"
-          srcset="
-            ./images/image-gallery/home-pic5-lg-11.jpg    1x,
-            ./images/image-gallery/home-pic5-lg-11@2x.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="
-            ./images/image-gallery/home-pic5-md-11.jpg    1x,
-            ./images/image-gallery/home-pic5-md-11@2x.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/image-gallery/home-pic5-sm-11.jpg    1x,
-            ./images/image-gallery/home-pic5-sm-11@2x.jpg 2x
-          "
-          type="image/jpg"
-        />
-        <img
-          src="./images/image-gallery/home-pic5-lg-11.jpg"
-          alt="Пончик с мороженым поверх кувшина на желтом фоне"
-          width="138"
-          height="138"
-        />
-      </picture>
-    </div>
+    <picture class="gallery-pictures__pic-10">
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./images/image-gallery/home-pic5-lg-11.jpg    1x,
+          ./images/image-gallery/home-pic5-lg-11@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./images/image-gallery/home-pic5-lg-11.jpg    1x,
+          ./images/image-gallery/home-pic5-lg-11@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/image-gallery/home-pic5-md-11.jpg    1x,
+          ./images/image-gallery/home-pic5-md-11@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <img
+        src="./images/image-gallery/home-pic5-lg-11.jpg"
+        alt="Пончик с мороженым поверх кувшина на желтом фоне"
+        width="138"
+        height="138"
+      />
+    </picture>
   </div>
 </section>
