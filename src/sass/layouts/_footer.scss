@@ -1,5 +1,6 @@
 .footer__section {
     border-bottom: 1px solid rgba(225, 225, 225, 1);
+    margin-top: 40px;
 }
 
 .footer-socials {
@@ -24,6 +25,10 @@
         border-radius: 50%;
         background-color: rgba(254, 165, 187, 1);
 
+        &:hover,
+        &:focus {
+            background-color: var( --brand-color);
+        }
     }
 
     &__icon {
@@ -80,7 +85,8 @@
         }
 }
 
-.footer-copy {
-    display: block;
+.footer-copy__list {
+    text-align: center;
+    margin-top: 16px;
 }
 
