@@ -1,13 +1,5 @@
 .section-about {
-  @media screen and (max-width: 767px) {
-    background-image: url(../images/about/sectionbg-sm.png);
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/about/sectionbg-sm@2x.png);
-    }
-  }
+  background: var(--bg-light-pink);
 
   @media screen and (min-width: 1200px) {
     background-image: url(../images/about/sectionbg-lg.png);
@@ -18,6 +10,69 @@
       background-image: url(../images/about/sectionbg-lg@2x.png);
     }
   }
+  &__label {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--icon-advant);
+    padding-top: 60px;
+    padding-bottom: 15px;
+  }
+  &__title {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--brand-color);
+    padding-bottom: 32px;
+  }
+}
+.about__background {
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about/sectionbg-sm.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about/sectionbg-sm@2x.png);
+    }
+  }
+}
+.about__title {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: var(--text-black);
+  margin: 40px 80px 30px 20px;
+}
+
+.about__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: var(--text-gray);
+  margin: 0 80px 10px 20px;
+}
+.about__text-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: var(--text-gray);
+  margin: 0 80px 20px 20px;
 }
 
 /* Модальне вікно */
@@ -37,16 +92,36 @@
     pointer-events: none;
   }
 }
+.about__button {
+  max-width: 209px;
+  color: var(--brand-color);
+  border-color: #0000;
+  border-radius: 22px;
+  align-items: baseline;
+  margin-left: 20px;
+  margin-right: auto;
+  padding: 10px 48px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.28;
+  background: var(--text-white);
+}
+
+.about__svg {
+  fill: var(--brand-color);
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 40px;
+  padding: 20px;
   width: 100%;
   transform: translate(-50%, -50%);
   max-width: 450px;
   min-height: 609px;
-  background-color: var(--brand-color);
+  background-color: var(--bg-navigation);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -62,7 +137,7 @@
   right: 0;
   width: 30px;
   height: 30px;
-  margin-top: 8px;
+  margin-top: 15px;
   margin-right: 8px;
   padding: 0;
   display: flex;
@@ -76,21 +151,42 @@
 
   &:hover,
   &:focus + .close-icon {
-    fill: var(---bg-navigation);
-    border-color: var(--bg-navigation);
+    border-color: var(--text-white);
   }
 }
 .about__form {
+  @media screen and (max-width: 1200px) {
+    background-image: url(../images/about/sectionbg-sm.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about/sectionbg-sm@2x.png);
+    }
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  &-text {
-    margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
+  &-label {
+    font-family: Titan One;
+    font-weight: 300;
+    font-size: 25px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--text-black);
+    line-height: 162%;
+    color: var(--brand-color);
+    margin-bottom: 14px;
+    margin-top: 30px;
+  }
+
+  &-text {
+    font-family: DM Sans;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--line-quotes-reviews);
   }
 }
