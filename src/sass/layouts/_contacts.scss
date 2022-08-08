@@ -1,20 +1,20 @@
 .contact {
     margin-top: 30px;
     background-image: linear-gradient(to bottom,
-    #E5E5E5 15%,
+    #FFFFFF 18%,
     #FFF5F6)
 }
 
-// .contact__title {
-//     position: absolute;
-//     width: 1px;
-//     height: 1px;
-//     margin: -1px;
-//     padding: 0;
-//     overflow: hidden;
-//     border: 0;
-//     clip: rect(0 0 0 0);
-// }
+.contact__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
 
 .contact__item {
     padding: 40px 32px;
@@ -68,6 +68,8 @@
 }
 
 .title {
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 12px;
@@ -111,7 +113,7 @@
 }
 
 .schedule__time {
-    margin-bottom: 8px;
+    
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
@@ -123,6 +125,10 @@
 
     @media screen and (min-width: 768px) {
         font-size: 16px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
     }
 }
 
@@ -188,4 +194,22 @@
     font-size: 16px;
     line-height: 21px;
     color: #D41443;
+}
+
+.icon-btn-r {
+    fill: #FFFFFF;
+    border: 2px;
+    margin-left: 10px;
+    top: 10;
+    right: 0;
+    transform: translateY(0);
+}
+
+.icon-btn-w {
+    fill: #D41342;
+    border: 2px;
+    margin-left: 10px;
+    top: 10;
+    right: 0;
+    transform: translateY(0);
 }
