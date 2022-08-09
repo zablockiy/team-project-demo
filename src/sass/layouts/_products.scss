@@ -87,7 +87,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      width: 33.33%;
+      width: calc((100% - 64px) / 3);
       height: 535px;
 
       margin-top: 261px;
