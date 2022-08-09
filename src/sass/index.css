@@ -110,6 +110,61 @@ ul {
   color: #000000;
 }
 
+.customer__page {
+  margin-left: auto;
+  margin-right: auto;
+}
+.customer__box-text {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 16px;
+  padding: 32px 73px 31px;
+  height: 138px;
+  margin-left: 116px;
+  margin-right: 116px;
+  background-color: var(--bg-reviews);
+}
+.customer__text {
+  position: relative;
+  padding: 0 12px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: var(--text-black);
+  background-color: transparent;
+  background-image: repeating-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 30px, #e1e1e1 30px, #e1e1e1 31px);
+  border-bottom: 1px solid var(--line-quotes-reviews);
+}
+.customer__info {
+  text-align: center;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+  color: var(--text-black);
+}
+.customer__info::before {
+  content: ". . .";
+  display: block;
+  color: var(--red-dots-reviews);
+}
+.customer__text-icon {
+  fill: var(--line-quotes-reviews);
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: black;
+}
+
 :root {
   --brand-color: #D41443;
   --white-color: #FFFFFF;
