@@ -10,6 +10,8 @@
   @media screen and (min-width: 1200px) {
     background-image: url(../images/about/sectionbg-lg.png);
     background-image: url(../images/about/sectionbg-lg@2x.png);
+    background-size: contain;
+    padding-bottom: 0;
   }
 
   &__label {
@@ -80,8 +82,8 @@
 
     @media screen and (max-width: 767px) {
       background-image: url(../images/about/sectionbg-sm.png);
-      background: no-repeat;
       background-image: url(../images/about/sectionbg-sm@2x.png);
+      background-size: contain;
     }
   }
 }
