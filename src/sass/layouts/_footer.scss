@@ -1,7 +1,18 @@
-.footer__section {
+.footer {
     background-color: var(--bg-light-pink);
+   
+}
+
+.footer__section { 
+    padding-top: 40px;
     border-bottom: 1px solid rgba(225, 225, 225, 1);
-    margin-top: 40px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 }
 
 .footer-socials {
@@ -14,6 +25,11 @@
     &__item {
         width: 32px;
         height: 32px;
+
+        @media screen and (min-width: 768px) {
+            width: 34px;
+            height: 34px; 
+        }
             }
 
     &__link {
@@ -39,12 +55,8 @@
 }
 
 .footer-title {
-    max-width: 234px;
+    width: 234px;
     margin-bottom: 40px;
-
-    &__item:not(:last-child) {
-        margin-bottom: 16px;
-    }
 
         &--pink {
         font-family: 'Titan One';
@@ -65,29 +77,97 @@
         color: var(--brand-color);
         }
 
+        @media screen and (min-width: 768px) {
+            width: 340px;
+            
+            &--pink {
+                font-size: 26px;
+                line-height: 1.15;        
+                }
+                
+                &--red {
+                font-size: 48px;
+                line-height: 1.15;
+                letter-spacing: 0.06em;
+                }
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 478px;
+            margin-bottom: 60px;
+
+            &--pink {
+                font-size: 30px;
+                line-height: 1.13;        
+                }
+                
+            &--red {
+                font-size: 58px;
+                line-height: 1.14;
+                }
+        }
+}
+
+.footer-title__item:not(:last-child) {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 16px;
+    }
+}
+
+footer-contacts {
+    
 }
 
 .footer-tel {
     text-align: right;
     margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.8;
 
-    &__text {
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 186%;
-        color: var(--text-black);
-        }
+        &__text {
+            color: var(--text-black);
+            }
 
-    &__numb {
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 186%;
-        color: var(--brand-color);
-        }
+        &__numb {
+            color: var(--brand-color);
+            }
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        ine-height: 1.9;
+                }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
+
+
+
+
+
 }
 
-.footer-copy__list {
+.footer-copy {
     text-align: center;
     margin-top: 16px;
-}
 
+    &__text {
+        line-height: 1.5;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+        line-height: 1.86;
+        letter-spacing: 0.02em;
+    }
+}
