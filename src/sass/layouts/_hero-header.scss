@@ -24,6 +24,11 @@
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .menu-button {
@@ -129,6 +134,10 @@
   @media screen and (min-width: 768px) {
     height: 416px;
   }
+
+  @media screen and (min-width: 1200px) {
+    height: 664px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -146,9 +155,19 @@
 }
 
 .block-left {
-  top: 102px;
+  top: 194px;
+  left: 16px;
   position: absolute;
   z-index: 8;
+
+  @media screen and (min-width: 768px) {
+    top: 102px;
+    left: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 16px;
+  }
 }
 
 .hero__title {
@@ -166,6 +185,12 @@
     max-width: 162px;
     font-size: 22px;
   }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 277px;
+    font-size: 38px;
+    line-height: 1.15;
+  }
 }
 
 .hero__title-text {
@@ -177,16 +202,23 @@
   @media screen and (min-width: 768px) {
     font-size: 34px;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+  }
 }
 
 .hero__button-list {
   display: flex;
   margin-top: 24px;
-  padding-bottom: 158px;
 
   @media screen and (min-width: 768px) {
     margin-top: 20px;
     padding-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 24px;
   }
 }
 
@@ -197,6 +229,10 @@
 
   &:not(:last-child) {
     margin-right: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 12px;
+    }
   }
 }
 
@@ -208,6 +244,11 @@
   font-size: 8px;
   line-height: 1.25;
   color: var(--white-color);
+
+  @media screen and (min-width: 1200px) {
+    padding: 11px 22px;
+    font-size: 14px;
+  }
 
   &:hover,
   &:focus {
@@ -341,10 +382,16 @@
     display: flex;
     align-items: center;
     margin-top: 20px;
+
+    @media screen and (min-width: 1200px) {
+      .bottle-wrapper {
+        margin-top: 40px;
+      }
+    }
   }
 
   .hero__text {
-    max-width: 120px;
+    max-width: 114px;
     margin-bottom: 7px;
     font-size: 8px;
     line-height: 1.5;
@@ -406,5 +453,118 @@
       background-image: url(../images/hero-header/girl-tablet@2x.png);
       background-size: 100%;
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header {
+    width: 100%;
+    margin-top: 40px;
+    z-index: 10;
+  }
+
+  .page-header__container {
+    width: 1200px;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation__list {
+    display: flex;
+  }
+
+  .icecream-img {
+    left: 630px;
+    top: 107px;
+    z-index: 7;
+    background-image: url(../images/hero-header/icecream-desk.png);
+    width: 236px;
+    height: 557px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .icecream-img {
+      background-image: url(../images/hero-header/icecream-desk@2x.png);
+      background-size: 100%;
+    }
+  }
+
+  .circle-img {
+    position: absolute;
+    left: 510px;
+    display: block;
+    width: 534px;
+    height: 534px;
+    background-color: var(--bg-hero-circle);
+    border-radius: 50%;
+  }
+
+  .block-left {
+    top: 150px;
+  }
+
+  .bottle-img {
+    width: 213px;
+    height: 216px;
+    background-image: url(../images/hero-header/bottle-desk.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .bottle-img {
+      background-image: url(../images/hero-header/bottle-desk@2x.png);
+      background-size: 100%;
+    }
+  }
+
+  .girl-img {
+    margin-top: 121px;
+    width: 304px;
+    height: 241px;
+    background-image: url(../images/hero-header/girl-desk.png);
+    background-size: 100%;
+
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      background-image: url(../images/hero-header/girl-desk@2x.png);
+      background-size: 100%;
+    }
+  }
+
+  .block-right {
+    top: 162px;
+    right: 31px;
+    margin-top: 0px;
+  }
+
+  .buypoint-list__count {
+    font-family: 'Titan One';
+    font-size: 46px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--brand-color);
+    z-index: 2;
+  }
+
+  .buypoint-list__count::before {
+    position: absolute;
+    right: -17px;
+    display: block;
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    z-index: -1;
+  }
+
+  .buypoint-list__text {
+    font-size: 14px;
+    line-height: 1.25;
+    color: var(--white-color);
   }
 }
