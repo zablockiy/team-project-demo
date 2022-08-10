@@ -1,20 +1,45 @@
 .gallery-pictures {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  width: 100%;
-  max-width: 767px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--white-color);
-  background-image: linear-gradient
-    (to bottom, var(--bg-light-pink) 30%, var(--white-color) 30%);
+  background-image: linear-gradient(
+    var(--bg-light-pink) 30%,
+    var(--white-color) 30%
+  );
+
   @media screen and (min-width: 768px) {
-    width: 100%;
+    background-color: var(--white-color);
+    background-image: linear-gradient(
+      var(--bg-light-pink) 50%,
+      var(--white-color) 50%
+    );
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--white-color);
+    background-image: linear-gradient(
+      var(--bg-light-pink) 30%,
+      var(--white-color) 30%
+    );
+  }
+}
+.gallery-pictures__container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1013px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1013px;
   }
 }
 .gallery-pictures__images-2-3 {
@@ -29,6 +54,7 @@
     margin-bottom: 58px;
   }
 }
+
 .gallery-pictures__images-4-5 {
   margin-top: 0;
   margin-bottom: 0;
@@ -57,103 +83,201 @@
     margin-bottom: 79px;
   }
 }
-.gallery-pictures__container {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-}
+
 .gallery-pictures__pic-1 {
+  display: block;
   margin-top: 45px;
   margin-bottom: 47px;
   border-radius: 8px;
+  padding: 2px;
+  transform: translate(0) scale(1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus {
+    transform: translate(20%) scale(1.2);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
     margin-top: 108px;
-    margin-bottom: 113px;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 143px;
-    margin-bottom: 149px;
+    padding: 4px;
   }
 }
 .gallery-pictures__pic-2 {
+  display: block;
   border-radius: 8px;
+  padding: 2px;
+  transform: translate(0) scale(1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus {
+    transform: translate(20%) scale(1.2);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
   }
   @media screen and (min-width: 1200px) {
+    padding: 4px;
   }
 }
+
 .gallery-pictures__pic-3 {
+  display: block;
   border-radius: 8px;
+  padding: 2px;
+  transform: translate(0) scale(1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus {
+    transform: translate(20%) scale(1.2);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
   }
   @media screen and (min-width: 1200px) {
+    padding: 4px;
   }
 }
+
 .gallery-pictures__pic-4 {
-  width: 90px;
-  height: 90px;
+  display: block;
   border-radius: 8px;
+  padding: 2px;
+  transform: translate(0) scale(1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus {
+    transform: translate(20%) scale(1.2);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
   }
   @media screen and (min-width: 1200px) {
+    padding: 4px;
   }
 }
+
 .gallery-pictures__pic-5 {
+  display: flex;
   width: 50%;
   border-radius: 8px;
   display: flex;
+  padding: 2px;
+  transform: translate(0) scale(1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus {
+    transform: translate(20%) scale(1.2);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
   }
   @media screen and (min-width: 1200px) {
+    padding: 4px;
   }
 }
+
 .gallery-pictures__pic-6 {
+  display: block;
   border-radius: 8px;
+  padding: 2px;
+  transform: translate(0) scale(1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus {
+    transform: translate(20%) scale(1.2);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 99px;
+    padding: 4px;
   }
 }
+
 .gallery-pictures__pic-7 {
+  display: block;
   border-radius: 8px;
+  padding: 2px;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transform: translate(0) scale(1);
+
+  &:hover,
+  &:focus {
+    transform: translate(20%) scale(1.2);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 4px;
   }
 }
 .gallery-pictures__pic-8 {
+  display: block;
   border-radius: 8px;
+  padding: 2px;
+  margin-bottom: 0;
+  transform: translate(0) scale(1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus {
+    transform: translate(20%) scale(1.2);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 66px;
+    padding: 4px;
   }
 }
+
 .gallery-pictures__pic-9 {
+  display: block;
   border-radius: 8px;
+  padding: 2px;
+  transform: translate(0) scale(1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus {
+    transform: translate(20%) scale(1.2);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
   }
   @media screen and (min-width: 1200px) {
+    padding: 4px;
   }
 }
+
 .gallery-pictures__pic-10 {
+  display: block;
   margin-top: 49px;
   margin-bottom: 43px;
   border-radius: 8px;
+  padding: 2px;
+  transform: translate(0) scale(1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus {
+    transform: translate(-20%) scale(1.2);
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
     margin-top: 117px;
-    margin-bottom: 103px;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 154px;
+    padding: 4px;
   }
 }
