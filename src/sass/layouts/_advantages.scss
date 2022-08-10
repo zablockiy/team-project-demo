@@ -2,11 +2,14 @@
 
 .advant {
     padding-top: 40px;
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
     background-color: var(--bg-light-pink);
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
         padding-top: 60px;
+
+    }
+    @media screen and (min-width: 1200px) {
         padding-bottom: 60px;
     }
 
@@ -20,61 +23,19 @@
 
         @media screen and (min-width:768px) {
             display: flex;
-            // flex-wrap: wrap;
             gap: 25px; 
         }
 
          @media screen and (min-width:1200px) {
             display: flex;
-            // flex-wrap: wrap;
             gap: 100px;           
         }
      }
 }
 
-
-// .visually-hidden {
-//     position: absolute;
-//     width: 1px;
-//     height: 1px;
-//     margin: -1px;
-//     border: 0;
-//     padding: 0;
-//     white-space: nowrap;
-//     clip-path: inset(100%);
-//     clip: rect(0 0 0 0);
-//     overflow: hidden;
-// }
-
 .advant__container {
     width: 100%;
 }
-
-// .container {
-//     width: 100%;
-//     margin-right: auto;
-//     margin-left: auto;
-//     padding-left: 20px;
-//     padding-right: 20px;
-
-//     @media screen and (min-width: 320px) {
-//         max-width: 320px;
-//     }
-
-//     @media screen and (min-width: 768px) {
-//         max-width: 768px;
-//         padding-left: 32px;
-//         padding-right: 32px;
-//     }
-
-//     @media screen and (min-width: 1200px) {
-//         max-width: 1200px;
-//         padding-left: 16px;
-//         padding-right: 16px;
-//     }
-
-// }
-
 
 
 .advant___item {
