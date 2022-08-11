@@ -31,7 +31,6 @@
 .gallery-pictures__container {
   display: flex;
   flex-wrap: nowrap;
-  align-items: center;
   min-width: 320px;
   margin-left: auto;
   margin-right: auto;
@@ -94,6 +93,8 @@
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
   &:focus {
+    position: relative;
+    z-index: 100;
     transform: translate(20%) scale(1.2);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
@@ -113,6 +114,8 @@
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
   &:focus {
+    position: relative;
+    z-index: 100;
     transform: translate(20%) scale(1.2);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
@@ -132,6 +135,8 @@
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
   &:focus {
+    position: relative;
+    z-index: 100;
     transform: translate(20%) scale(1.2);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
@@ -151,6 +156,8 @@
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
   &:focus {
+    position: relative;
+    z-index: 100;
     transform: translate(20%) scale(1.2);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
@@ -172,6 +179,8 @@
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
   &:focus {
+    position: relative;
+    z-index: 100;
     transform: translate(20%) scale(1.2);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
@@ -191,7 +200,9 @@
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
   &:focus {
-    transform: translate(20%) scale(1.2);
+    position: relative;
+    z-index: 100;
+    transform: translate(-20%) scale(1.2);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
   @media screen and (min-width: 768px) {
@@ -211,7 +222,9 @@
 
   &:hover,
   &:focus {
-    transform: translate(20%) scale(1.2);
+    position: relative;
+    z-index: 100;
+    transform: translate(-20%) scale(1.2);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
   @media screen and (min-width: 768px) {
@@ -230,7 +243,9 @@
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
   &:focus {
-    transform: translate(20%) scale(1.2);
+    position: relative;
+    z-index: 100;
+    transform: translate(-20%) scale(1.2);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
   @media screen and (min-width: 768px) {
@@ -249,7 +264,9 @@
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
   &:focus {
-    transform: translate(20%) scale(1.2);
+    position: relative;
+    z-index: 100;
+    transform: translate(-20%) scale(1.2);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
   @media screen and (min-width: 768px) {
@@ -270,6 +287,8 @@
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
   &:focus {
+    position: relative;
+    z-index: 100;
     transform: translate(-20%) scale(1.2);
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
