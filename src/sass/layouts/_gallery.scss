@@ -31,6 +31,7 @@
 .gallery-pictures__container {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
   min-width: 320px;
   margin-left: auto;
   margin-right: auto;
@@ -88,7 +89,7 @@
   margin-top: 45px;
   margin-bottom: 47px;
   border-radius: 8px;
-  padding: 2px;
+  padding: 1px;
   transform: translate(0) scale(1);
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
@@ -101,6 +102,7 @@
   @media screen and (min-width: 768px) {
     border-radius: 20px;
     margin-top: 108px;
+    padding: 3px;
   }
   @media screen and (min-width: 1200px) {
     padding: 4px;
@@ -109,7 +111,7 @@
 .gallery-pictures__pic-2 {
   display: block;
   border-radius: 8px;
-  padding: 2px;
+  padding: 1px;
   transform: translate(0) scale(1);
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
@@ -121,6 +123,7 @@
   }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
+    padding: 3px;
   }
   @media screen and (min-width: 1200px) {
     padding: 4px;
@@ -130,7 +133,7 @@
 .gallery-pictures__pic-3 {
   display: block;
   border-radius: 8px;
-  padding: 2px;
+  padding: 1px;
   transform: translate(0) scale(1);
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
@@ -142,6 +145,7 @@
   }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
+    padding: 3px;
   }
   @media screen and (min-width: 1200px) {
     padding: 4px;
@@ -151,7 +155,7 @@
 .gallery-pictures__pic-4 {
   display: block;
   border-radius: 8px;
-  padding: 2px;
+  padding: 1px;
   transform: translate(0) scale(1);
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
@@ -163,6 +167,7 @@
   }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
+    padding: 3px;
   }
   @media screen and (min-width: 1200px) {
     padding: 4px;
@@ -174,7 +179,7 @@
   width: 50%;
   border-radius: 8px;
   display: flex;
-  padding: 2px;
+  padding: 1px;
   transform: translate(0) scale(1);
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
@@ -186,6 +191,7 @@
   }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
+    padding: 3px;
   }
   @media screen and (min-width: 1200px) {
     padding: 4px;
@@ -195,7 +201,7 @@
 .gallery-pictures__pic-6 {
   display: block;
   border-radius: 8px;
-  padding: 2px;
+  padding: 1px;
   transform: translate(0) scale(1);
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
@@ -207,6 +213,7 @@
   }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
+    padding: 3px;
   }
   @media screen and (min-width: 1200px) {
     padding: 4px;
@@ -216,7 +223,7 @@
 .gallery-pictures__pic-7 {
   display: block;
   border-radius: 8px;
-  padding: 2px;
+  padding: 1px;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transform: translate(0) scale(1);
 
@@ -229,6 +236,7 @@
   }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
+    padding: 3px;
   }
   @media screen and (min-width: 1200px) {
     padding: 4px;
@@ -237,7 +245,7 @@
 .gallery-pictures__pic-8 {
   display: block;
   border-radius: 8px;
-  padding: 2px;
+  padding: 1px;
   margin-bottom: 0;
   transform: translate(0) scale(1);
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
@@ -250,6 +258,7 @@
   }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
+    padding: 3px;
   }
   @media screen and (min-width: 1200px) {
     padding: 4px;
@@ -259,7 +268,7 @@
 .gallery-pictures__pic-9 {
   display: block;
   border-radius: 8px;
-  padding: 2px;
+  padding: 1px;
   transform: translate(0) scale(1);
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
@@ -271,6 +280,7 @@
   }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
+    padding: 3px;
   }
   @media screen and (min-width: 1200px) {
     padding: 4px;
@@ -282,7 +292,7 @@
   margin-top: 49px;
   margin-bottom: 43px;
   border-radius: 8px;
-  padding: 2px;
+  padding: 1px;
   transform: translate(0) scale(1);
   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   &:hover,
@@ -294,6 +304,7 @@
   }
   @media screen and (min-width: 768px) {
     border-radius: 20px;
+    padding: 3px;
     margin-top: 117px;
   }
   @media screen and (min-width: 1200px) {
