@@ -201,6 +201,12 @@
     line-height: 1.31;
   }
 }
+
+.about__button:hover,
+.about__button:focus {
+  background-color: var(--bg-hover-btn);
+}
+
 .about__button-text {
   margin-right: 13px;
 }
