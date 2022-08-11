@@ -1,13 +1,14 @@
 .advant {
-  // padding-top: 40px;
-  // padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 30px;
   background-color: var(--bg-light-pink);
 
   @media screen and (min-width: 768px) {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 
@@ -101,6 +102,70 @@
     }
   }
 }
+
+// Анимация старт
+.advant__box {
+  perspective: 400px;
+}
+
+.advant___item:nth-child(1) .advant__box {
+  &::before {
+
+    animation: spin 5s linear infinite;
+  }
+
+
+
+  @keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+}
+
+.advant___item:nth-child(2) .advant__box {
+  &::before {
+
+    animation: spin 4s linear infinite;
+  }
+
+
+
+  @keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+}
+
+.advant___item:nth-child(3) .advant__box {
+  &::before {
+
+    animation: spin 5.5s linear infinite;
+  }
+
+
+
+  @keyframes spin {
+    0% {
+      transform: rotateY(0deg);
+    }
+
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+}
+
+// Анимация конец
 
 .advant__number {
   margin-top: 16px;
