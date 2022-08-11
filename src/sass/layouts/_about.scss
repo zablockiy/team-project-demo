@@ -3,12 +3,26 @@
   padding-top: 60px;
   padding-bottom: 40px;
 
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about/sectionbg-sm.png);
+    background-image: url(../images/about/sectionbg-sm@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 22% 78%;
+  }
+
   @media screen and (min-width: 768px) {
     padding-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 0;
+
+    background-image: url(../images/about/sectionbg-lg.png);
+    background-image: url(../images/about/sectionbg-lg@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 5% 95%;
   }
 
   &__label {
@@ -55,24 +69,6 @@
   }
 }
 
-.backgraund__img {
-  @media screen and (min-width: 1200px) {
-    background-image: url(../images/about/sectionbg-lg.png);
-    background-image: url(../images/about/sectionbg-lg@2x.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}
-
-.backgraund__img-small {
-  @media screen and (max-width: 767px) {
-    background-image: url(../images/about/sectionbg-sm.png);
-    background-image: url(../images/about/sectionbg-sm@2x.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 30% 70%;
-  }
-}
 .container-about {
   @media screen and (min-width: 768px) {
     position: relative;
@@ -158,7 +154,7 @@
     margin-bottom: 40px;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 16px;
+    line-height: 194%;
     width: 463px;
   }
 }
@@ -171,8 +167,14 @@
   z-index: 1000;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(2, 2, 2, 0.7);
   transition: var(--anim);
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/about/sectionbg-lg.png);
+    background-image: url(../images/about/sectionbg-lg@2x.png);
+    background-size: contain;
+  }
 
   &.is-hidden {
     opacity: 0;
@@ -218,7 +220,14 @@
   background-color: var(--bg-navigation);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-radius: 24px;
+
+  @media screen and (max-width: 767px), (min-width: 900px) {
+    background-image: url(../images/about/sectionbg-sm.png);
+    background-image: url(../images/about/sectionbg-sm@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 .modal-close-btn {
@@ -245,11 +254,6 @@
   }
 }
 .about__form {
-  @media screen and (max-width: 1200px) {
-    background-image: url(../images/about/sectionbg-sm.png);
-    background: no-repeat;
-    background-image: url(../images/about/sectionbg-sm@2x.png);
-  }
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -245,7 +245,7 @@
 }
 
 .hero__link {
-  padding: 8px 13px;
+  padding: 7px 14px;
   background-color: var(--brand-color);
   border-radius: 20px;
 
@@ -626,5 +626,9 @@
     font-size: 14px;
     line-height: 1.25;
     color: var(--white-color);
+  }
+
+  .mobile-menu {
+    display: none;
   }
 }
