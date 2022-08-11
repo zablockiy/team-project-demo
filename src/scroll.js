@@ -9,6 +9,9 @@ for (let anchor of anchors) {
       behavior: 'smooth',
       block: 'start',
     });
+    if (mobileMenuRef.classList.value !== 'mobile-menu is-open') {
+      return;
+    }
     mobileMenuRef.classList.toggle('is-open');
     menuBtnRef.classList.toggle('is-open');
   });
