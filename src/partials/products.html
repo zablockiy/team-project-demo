@@ -1,44 +1,58 @@
+<!-- PRODUCTS -->
 <section class="section products" id="products">
-  <div class="container">
-    <p class="products__label">100% natural</p>
-    <h2 class="products__title">products</h2>
-    <ul class="products__list list">
-      <li class="products__item products__item--ice-cream">
-        <h3 class="products__sublist">ice cream</h3>
-        <p class="products__subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et<span class="products__text">. dolore magna aliqua facilisis.</span>
-        </p>
-        <div class="products__button">
-          <a class="products__icon">
-            <img src="./images/products/arrow-right-4.png" alt="іконка стрілочки" />
-          </a>
-        </div>
-      </li>
-      <li class="products__item products__item--ice-coffee">
-        <h3 class="products__sublist">ice coffee</h3>
-        <p class="products__subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et<span class="products__text">. dolore magna aliqua facilisis.</span>
-        </p>
-        <div class="products__button">
-          <a class="products__icon">
-            <img src="./images/products/arrow-right-4.png" alt="іконка стрілочки" />
-          </a>
-        </div>
-      </li>
-      <li class="products__item products__item--milkshakes">
-        <h3 class="products__sublist">milkshakes</h3>
-        <p class="products__subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et<span class="products__text">. dolore magna aliqua facilisis.</span>
-        </p>
-        <div class="products__button">
-          <a class="products__icon">
-            <img src="./images/products/arrow-right-4.png" alt="іконка стрілочки" />
-          </a>
-        </div>
-      </li>
-    </ul>
+  
+    <div class="container">
+      <p class="products__label animate__animated animate__fadeInLeft">
+        100% natural
+      </p>
+      <h2 class="products__title">products</h2>
+      <ul class="products__list list animate__animated animate__fadeInUp">
+        <li class="products__item products__item--ice-cream">
+          <h3 class="products__sublist">ice cream</h3>
+          <p class="products__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et<span class="products__text"
+              >. dolore magna aliqua facilisis.</span
+            >
+          </p>
+          <!-- Модальне вікно -->
+          <button data-modal-open2 type="button" class="products__button" aria-label="menu-open">
+            <svg class="products__svg" width="8" height="8">
+              <use href="./images/icons.svg#button-arrow"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="products__item products__item--ice-coffee">
+          <h3 class="products__sublist">ice coffee</h3>
+          <p class="products__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et<span class="products__text"
+              >. dolore magna aliqua facilisis.</span
+            >
+          </p>
+          <!-- Модальне вікно -->
+          <button data-modal-open3 type="button" class="products__button" aria-label="menu-open">
+            <svg class="products__svg" width="8" height="8">
+              <use href="./images/icons.svg#button-arrow"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="products__item products__item--milkshakes">
+          <h3 class="products__sublist">milkshakes</h3>
+          <p class="products__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et<span class="products__text"
+              >. dolore magna aliqua facilisis.</span
+            >
+          </p>
+          <!-- Модальне вікно -->
+          <button data-modal-open4 type="button" class="products__button" aria-label="menu-open">
+            <svg class="products__svg" width="8" height="8">
+              <use href="./images/icons.svg#button-arrow"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>

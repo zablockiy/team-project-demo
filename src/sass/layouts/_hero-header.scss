@@ -19,6 +19,7 @@
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+  line-height: 1.15;
 
   @media screen and (min-width: 768px) {
     padding-left: 32px;
@@ -56,8 +57,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .navigation,
-  .button-top {
+  .navigation {
     display: none;
   }
 }
@@ -77,21 +77,28 @@
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &.is-open {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
-.mobile-menu__btn {
+.is-open.menu-button {
+  position: fixed;
+  right: 20px;
+}
+
+.button-top {
+  position: fixed;
+  top: 60px;
+  right: 21px;
+  z-index: 20;
   display: flex;
   justify-content: space-around;
   align-items: baseline;
   max-width: 209px;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 10px 55px;
   border-radius: 22px;
   border-color: transparent;
+  cursor: pointer;
 
   font-family: inherit;
   font-weight: 700;
@@ -101,7 +108,10 @@
   background-color: var(--white-color);
   color: var(--brand-color);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+
+  transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -109,12 +119,16 @@
   }
 }
 
+.is-open ~ .button-top {
+  opacity: 1;
+}
+
 .mobile-menu__text {
   margin-right: 20px;
 }
 
 .mobile-menu__list {
-  margin-top: 19px;
+  margin-top: 103px;
 }
 .mobile-menu__item {
   padding: 10px 0;
@@ -245,7 +259,7 @@
 }
 
 .hero__link {
-  padding: 8px 13px;
+  padding: 7px 14px;
   background-color: var(--brand-color);
   border-radius: 20px;
 
@@ -260,17 +274,17 @@
     padding: 11px 22px;
     font-size: 14px;
   }
+}
+
+.hero__link-right {
+  background-color: var(--white-color);
+  color: var(--brand-color);
 
   &:hover,
   &:focus {
     background-color: var(--bg-hover-btn);
     color: var(--brand-color);
   }
-}
-
-.hero__link-right {
-  background-color: var(--white-color);
-  color: var(--brand-color);
 }
 
 .icecream-img {
@@ -313,6 +327,7 @@
   }
 
   .button-top {
+    position: static;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -321,6 +336,7 @@
     padding: 10px 35px;
     border-radius: 22px;
     border-color: transparent;
+    opacity: 1;
 
     font-family: inherit;
     font-weight: 700;
@@ -332,6 +348,8 @@
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    cursor: pointer;
+
     &:hover,
     &:focus {
       background-color: var(--bg-hover-btn);
@@ -339,9 +357,19 @@
   }
 
   .is-open.menu-button {
-    position: absolute;
-    top: 0px;
-    right: 32px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+
+  .is-open ~ .button-top {
+    position: fixed;
+    top: 60px;
+    right: 34px;
+    margin-left: 0;
+    max-width: 186px;
+    padding: 10px 48px;
+    z-index: 100;
   }
 
   .mobile-menu__btn {
@@ -626,5 +654,9 @@
     font-size: 14px;
     line-height: 1.25;
     color: var(--white-color);
+  }
+
+  .mobile-menu {
+    display: none;
   }
 }

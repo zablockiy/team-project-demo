@@ -1,53 +1,56 @@
+<!-- about -->
 <section id="about" class="section-about">
   <div class="container container-about">
     <p class="section-about__label">tradition and love</p>
     <h2 class="section-about__title">how it’s made?</h2>
-    <div class="backgraund__img">
- <picture>
-    <source media="(min-width: 1200px)" srcset="./images/about/cow-lg.png 1x, ./images/about/cow-lg@2x.png 2x"
-        type="image/png"/>
-    <source media="(min-width: 768px)" srcset="./images/about/cow-md.png 1x, ./images/about/cow-md@2x.png 2x"
-        type="image/png"/>
-    <source media="(max-width: 767px)" srcset="./images/about/cow-sm.png 1x, ./images/about/cow-sm@2x.png 2x"
-        type="image/png"/>
-    <img class="about__img" src="./images/about/cow-sm.png" alt="cow"/>
-  </picture>
-  <div class="about">
-  <div class="about__background">
-   <div class="backgraund__img-small">
-  <h3 class="about__title">
-    Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-    cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo
-    fringilla.
-  </h3>
-  <p class="about__text">
-    Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-    Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit
-    ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p></div>
-    <p class="about__text-text"> Aliquam erat volutpat. Aenean accumsan.</p>
+    <picture>
+      <source media="(min-width: 1200px)" srcset="./images/about/cow-lg.png 1x, ./images/about/cow-lg@2x.png 2x"
+        type="image/png" />
+      <source media="(min-width: 768px)" srcset="./images/about/cow-md.png 1x, ./images/about/cow-md@2x.png 2x"
+        type="image/png" />
+      <source media="(max-width: 767px)" srcset="./images/about/cow-sm.png 1x, ./images/about/cow-sm@2x.png 2x"
+        type="image/png" />
+      <img class="about__img" src="./images/about/cow-sm.png" alt="cow" />
+    </picture>
+    <div class="about">
+      <div class="about__background">
+        <h3 class="about__title">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo
+          fringilla.
+        </h3>
+        <p class="about__text">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit
+          ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p>
+        <p class="about__text-text"> Aliquam erat volutpat. Aenean accumsan.</p>
 
-  <!-- Модальне вікно -->
-  <button data-modal-open type ="button" class ="about__button">
-    <span class="about__button-text">Read more</span>
-           <svg class="about__svg" width="8" height="8">
-      <use href="./images/icons.svg#button-arrow"></use>
-    </svg>
-        </button>
-    <div class ="backdrop is-hidden" data-modal >
-      <div class ="modal">
-        <button  data-modal-close  class ="modal-close-btn" type ="button">
-          <svg  class ="close-icon" width ="18" height ="18">
-            <use  href ="./images/icons.svg#icon-close"></use>
+        <!-- Модальне вікно -->
+        <button data-modal-open type="button" class="about__button" aria-label="menu-open">
+          <span class="about__button-text">Read more</span>
+          <svg class="about__svg" width="8" height="8">
+            <use href="./images/icons.svg#button-arrow"></use>
           </svg>
         </button>
-        <form  class ="about__form">
-    <h3 class="about__form-label">Milk and bone health</h3>
-          <p  class ="about__form-text"> Calcium is an essential nutrient for strong bones and teeth, muscle movement, and nerve signals. Health authorities recommend getting enough calcium to help prevent bone fractures and osteoporosis.
-Milk offers a rich source of calcium. Manufacturers fortify cow’s milk with vitamin D, another nutrient that benefits bone health.
-While calcium is important, not all studies agree that milk is good for preventing osteoporosis or fractures, as a 2019 review discusses. Due to this discrepancy, scientists still need to do more research.</p>
-          </form>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button data-modal-close class="modal-close-btn" type="button" aria-label="menu-close">
+              <svg class="close-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <form class="about__form">
+              <h3 class="about__form-label">Milk and bone health</h3>
+              <p class="about__form-text"> Calcium is an essential nutrient for strong bones and teeth, muscle movement,
+                and nerve signals. Health authorities recommend getting enough calcium to help prevent bone fractures
+                and osteoporosis.
+                Milk offers a rich source of calcium. Manufacturers fortify cow’s milk with vitamin D, another nutrient
+                that benefits bone health.
+                While calcium is important, not all studies agree that milk is good for preventing osteoporosis or
+                fractures, as a 2019 review discusses. Due to this discrepancy, scientists still need to do more
+                research.</p>
+            </form>
           </div>
-           </div>
-           </div>
-            </div>
+        </div>
+      </div>
 </section>

@@ -1,12 +1,12 @@
 <!-- HEADER -->
 <header class="page-header">
   <div class="page-header__container">
-    <a class="logo link" href="">
+    <a class="logo link" href="#">
       <svg width="199" height="50">
         <use href="./images/icons.svg#icon-logo"></use>
       </svg>
     </a>
-    <button class="menu-button" type="button" data-menu-button>
+    <button class="menu-button" type="button" aria-label="menu-open" data-menu-button>
       <svg width="20" height="20">
         <use
           class="menu-button__menu"
@@ -21,7 +21,9 @@
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--current link" href=""
+          <a
+            class="navigation__link navigation__link--current link"
+            href="#hero"
             >Home</a
           >
         </li>
@@ -39,7 +41,7 @@
         </li>
       </ul>
     </nav>
-    <button class="button-top" type="button">
+    <button class="button-top" type="button" aria-label="buy-now" data-modal-open1>
       <span class="mobile-menu__text">Buy now</span>
       <svg width="8" height="8">
         <use href="./images/icons.svg#button-arrow"></use>
@@ -50,16 +52,12 @@
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" data-menu>
-  <button class="mobile-menu__btn" type="button">
-    <span class="mobile-menu__text">Buy now</span>
-    <svg width="8" height="8">
-      <use href="./images/icons.svg#button-arrow"></use>
-    </svg>
-  </button>
   <nav class="mobile-menu__navigation">
     <ul class="mobile-menu__list">
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link mobile-menu__link--current link" href=""
+        <a
+          class="mobile-menu__link mobile-menu__link--current link"
+          href="#hero"
           >Home</a
         >
       </li>
@@ -80,7 +78,7 @@
 </div>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="hero">
   <div class="container container-wrapper">
     <div class="block-left">
       <h1 class="hero__title">
@@ -106,7 +104,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
-          <a href="">
+          <a href="#about">
             <picture>
               <source
                 srcset="
