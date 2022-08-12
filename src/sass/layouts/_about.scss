@@ -1,7 +1,7 @@
 .section-about {
   background: var(--bg-light-pink);
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 
   @media screen and (max-width: 767px) {
     background-image: url(../images/about/sectionbg-sm.png);
@@ -230,7 +230,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 24px;
 
-  @media screen and (max-width: 767px), (min-width: 900px) {
+  @media screen and (max-width: 767px), (min-width: 1200px) {
     background-image: url(../images/about/sectionbg-sm.png);
     background-image: url(../images/about/sectionbg-sm@2x.png);
     background-size: contain;
