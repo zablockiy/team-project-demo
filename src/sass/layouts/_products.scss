@@ -255,17 +255,26 @@
     margin-bottom: 40px;
 
     font-family: inherit;
-    /* font-size: 14px; */
     font-weight: 700;
-    /* line-height: 1.28; */
+
+    cursor: pointer;
+    
 
     @media screen and (min-width: 1200px) {
       margin-bottom: 60px;
+
+      width: 60px;
+      height: 65px;
     }
   }
 
   &__svg {
     fill: var(--brand-color);
+    
+    @media screen and (min-width: 1200px) {
+      width: 15px;
+      height: 15px;      
+    }
   }
 
   &__form {
@@ -289,7 +298,7 @@
   &__form-text {
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--line-quotes-reviews);
+    color: var(--text-gray);
     margin-bottom: 12px;
     font-family: DM Sans;
     font-size: 13px;
