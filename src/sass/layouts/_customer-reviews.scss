@@ -14,11 +14,9 @@
     }
 
     &__box-text {
-        margin-right: 10px;
-        margin-left: 10px;
         padding: 44px 50px 17px 50px;
         position: relative;
-        border-radius: 14px;
+        // border-radius: 4px;
       
         background-color: var(--bg-reviews);
 
@@ -106,7 +104,7 @@
         color: var(--text-black);
 
         &::before {
-            content: "• • •";
+            content: ". . .";
             display: block;
             color: var(--red-dots-reviews);
         }
