@@ -7,7 +7,7 @@ AOS.init({
   useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
   disableMutationObserver: false, // disables automatic mutations' detections (advanced)
   debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 105, // the delay on throttle used while scrolling the page (advanced)
+  throttleDelay: 100, // the delay on throttle used while scrolling the page (advanced)
   
 
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:

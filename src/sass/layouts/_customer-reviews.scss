@@ -1,184 +1,167 @@
-.section-customer {
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 40px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
 .customer {
-  &__page {
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 32px;
+    &__page {
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 32px;
 
-    @media screen and (min-width: 768px) {
-      padding-bottom: 20px;
+        @media screen and (min-width:768px) {
+            padding-bottom: 20px;
+        }
+
+        @media screen and (min-width:1200px) {
+            padding-bottom: 16px;
+        }
     }
 
-    @media screen and (min-width: 1200px) {
-      padding-bottom: 16px;
-    }
-  }
+    &__box-text {
+        padding: 44px 50px 17px 50px;
+        position: relative;
+        // border-radius: 4px;
+      
+        background-color: var(--bg-reviews);
 
-  &__box-text {
-    padding: 44px 50px 17px 50px;
-    position: relative;
-    // border-radius: 4px;
+        @media screen and (min-width:768px) {
+            margin-right: 60px;
+            margin-left: 60px;
+            padding: 37px 6px 36px;
+        }
 
-    background-color: var(--bg-reviews);
+        @media screen and (min-width:1200px) {
+            margin-right: 116px;
+            margin-left: 116px;
+            padding: 47px 53px 31px;
+        }
 
-    @media screen and (min-width: 768px) {
-      margin-right: 60px;
-      margin-left: 60px;
-      padding: 37px 6px 36px;
-    }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+          
+            display: block;
+            width: 54px;
+            height: 40px;
+          
+            background-image: url(../images/customer-reviews/quotes.svg);
+            background-size: cover;
 
-    @media screen and (min-width: 1200px) {
-      margin-right: 116px;
-      margin-left: 116px;
-      padding: 47px 53px 31px;
-    }
+            @media screen and (min-width:768px) {
+                width: 60px;
+                height: 40px;
 
-    &::before {
-      content: '';
-      position: absolute;
-      top: 30px;
-
-      display: block;
-      width: 54px;
-      height: 40px;
-
-      background-image: url(../images/customer-reviews/quotes.svg);
-      background-size: cover;
-
-      @media screen and (min-width: 768px) {
-        width: 60px;
-        height: 40px;
-
-        top: 20px;
-        left: 6px;
-      }
-
-      @media screen and (min-width: 1200px) {
-        top: 32px;
-        left: 52px;
-      }
-    }
-  }
-
-  &__text {
-    position: relative;
-    text-align: center;
-    padding: 0 12px;
-
-    font-family: 'DM Sans';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 255%;
-    color: var(--text-black);
-
-    background-color: transparent;
-    background-image: repeating-linear-gradient(
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0) 30px,
-      rgba(225, 225, 225, 1) 30px,
-      rgba(225, 225, 225, 1) 31px
-    );
-    border-bottom: 1px solid var(--line-quotes-reviews);
-    border-top: 0ch;
-
-    @media screen and (min-width: 768px) {
-      padding: 0px 41px;
-
-      font-size: 14px;
-      line-height: 216%;
-      letter-spacing: 0.04em;
+                top: 20px;
+                left: 6px;
+            }
+    
+            @media screen and (min-width:1200px) {
+                top: 32px;
+                left: 52px;
+            }
+        }
     }
 
-    @media screen and (min-width: 1200px) {
-      padding: 0 27px;
+    &__text {
+        position: relative;
+        text-align: center;
+        padding: 0 12px;
 
-      font-size: 16px;
-      line-height: 186%;
+        font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 255%;
+        color: var(--text-black); 
+
+        background-color: transparent;
+        background-image: repeating-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 30px, rgba(225, 225, 225, 1) 30px, rgba(225, 225, 225, 1) 31px);
+        border-bottom: 1px solid var(--line-quotes-reviews);
+        border-top: 0ch;
+
+        @media screen and (min-width:768px) {
+            padding: 0px 41px;
+
+            font-size: 14px;
+            line-height: 216%;
+            letter-spacing: 0.04em;
+            
+        }
+
+        @media screen and (min-width:1200px) {
+            padding: 0 27px;
+            
+            font-size: 16px;
+            line-height: 186%;
+        }
     }
-  }
 
-  &__info {
-    text-align: center;
+    &__info {
+        text-align: center;
 
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 186%;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 186%; 
 
-    color: var(--text-black);
+        color: var(--text-black);
 
-    &::before {
-      content: '. . .';
-      display: block;
-      color: var(--red-dots-reviews);
+        &::before {
+            content: ". . .";
+            display: block;
+            color: var(--red-dots-reviews);
+        }
+
+        @media screen and (min-width:768px) {
+            padding: 4px auto 32px;
+
+            font-size: 16px;
+        }
+
+        @media screen and (min-width:1200px) {
+            padding: 16px auto 32px;
+
+            font-size: 20px;
+        }
     }
-
-    @media screen and (min-width: 768px) {
-      padding: 4px auto 32px;
-
-      font-size: 16px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      padding: 16px auto 32px;
-
-      font-size: 20px;
-    }
-  }
 }
 
 .slick-slider {
-  position: relative;
-  display: block;
+    position: relative;
+    display: block;
 }
-
-.slick-track {
-  display: flex;
+  
+  .slick-track {
+    display: flex;
+   }
+  
+  .slick-list {
+    overflow: hidden;
 }
-
-.slick-list {
-  overflow: hidden;
+  
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
 }
+  
+  .slick-dots > li {
+    width: 12px;
+    height: 12px;
+  
+    font-size: 0;
+    border-radius: 50%;
+    background-color: var(--gray-dots-reviews);
 
-.slick-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
-}
-
-.slick-dots > li {
-  width: 12px;
-  height: 12px;
-
-  font-size: 0;
-  border-radius: 50%;
-  background-color: var(--gray-dots-reviews);
-
-  &.slick-active {
-    border-radius: 0;
-    background-color: transparent;
-    background-image: url(../images/customer-reviews/slider-home.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+    &.slick-active {
+      border-radius: 0;
+      background-color: transparent;
+      background-image: url(../images/customer-reviews/slider-home.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 }
 
 .slick-dots li button::before {
-  content: none;
+    content: none;
 }
+
