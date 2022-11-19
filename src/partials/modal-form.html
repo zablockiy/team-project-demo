@@ -1,70 +1,93 @@
-<div data-modal1 class="backdrop-top hidden">
-  <div class="modal-top">
+<div data-modal1 class='backdrop-top hidden'>
+  <div class='modal-top'>
     <button
       data-modal-close1
-      class="modal-top__btn"
-      aria-label="mobile-menu-close"
-      type="button"
+      class='modal-top__btn'
+      aria-label='mobile-menu-close'
+      type='button'
     >
-      <svg class="modal-top__icon" width="18" height="18">
-        <use href="./images/icons.svg#icon-close-btn"></use>
+      <svg class='modal-top__icon' width='18' height='18'>
+        <use href='./images/icons.svg#icon-close-btn'></use>
       </svg>
     </button>
 
-    <form class="modal-top-form">
-      <p class="modal-top-form__title">
-        Leave your details, we will call you back
+    <form class='modal-top-form'>
+      <p class='modal-top-form__title'>
+        Order your ice-cream
       </p>
-      <label class="modal-top-form__label"
-        ><span class="modal-top-form__text">Name</span>
-        <input class="modal-top-form__input" name="name" type="text" />
-        <svg class="modal-top-form__icon" width="18" height="18">
-          <use href="./images/icons.svg#icon-person"></use>
+      <label class='modal-top-form__label'
+      ><span class='modal-top-form__text'>Name</span>
+        <input class='modal-top-form__input' name='name' type='text' />
+        <svg class='modal-top-form__icon' width='18' height='18'>
+          <use href='./images/icons.svg#icon-person'></use>
         </svg>
       </label>
-      <label class="modal-top-form__label"
-        ><span class="modal-top-form__text">Phone</span>
-        <input class="modal-top-form__input" name="tel" type="tel" />
-        <svg class="modal-top-form__icon" width="18" height="18">
-          <use href="./images/icons.svg#icon-phone"></use>
+      <label class='modal-top-form__label'
+      ><span class='modal-top-form__text'>Phone</span>
+        <input class='modal-top-form__input' name='tel' type='tel' />
+        <svg class='modal-top-form__icon' width='18' height='18'>
+          <use href='./images/icons.svg#icon-phone'></use>
         </svg>
       </label>
-      <label class="modal-top-form__label"
-        ><span class="modal-top-form__text">Email</span>
-        <input class="modal-top-form__input" name="email" type="email" />
-        <svg class="modal-top-form__icon" width="18" height="18">
-          <use href="./images/icons.svg#icon-email"></use>
+      <label class='modal-top-form__label'
+      ><span class='modal-top-form__text'>Email</span>
+        <input class='modal-top-form__input' name='email' type='email' />
+        <svg class='modal-top-form__icon' width='18' height='18'>
+          <use href='./images/icons.svg#icon-email'></use>
         </svg>
       </label>
-      <label class="modal-top-form__label">
-        <span class="modal-top-form__text">Comment</span>
+      <label class='modal-top-form__label'>
+        <span class='modal-top-form__text'>Enter your delivery adress</span>
         <textarea
-          class="modal-top-form__comment"
-          name="comment"
-          rows="5"
-          placeholder="Enter a comment"
+          class='modal-top-form__comment'
+          name='comment'
+          rows='3'
+          placeholder='Enter a comment'
         ></textarea>
       </label>
 
-      <label class="custom-checkbox">
-        <input
-          class="custom-checkbox__input"
-          type="checkbox"
-          name="agreement"
-        />
-        <span class="custom-checkbox__icon"></span>
-        <span>
-          Agree with the newsletter and accept
-          <a class="custom-checkbox__text" href="">terms of an agreement</a>
-        </span>
-      </label>
+      <div class='check-box-wrapper'>
+        <label class='custom-checkbox custom-checkbox--vanila'>
+          <input
+            class='custom-checkbox__input'
+            type='checkbox'
+            name='vanila'
+            value=''
+          />
+          <span class='custom-checkbox__icon'></span>
+          <span> Vanila</span>
+          <input class='ice-count ice-count-vanila' type='number' name='vanila-quantity'>
+        </label>
+        <label class='custom-checkbox custom-checkbox--chocolate'>
+          <input
+            class='custom-checkbox__input'
+            type='checkbox'
+            name='chocolate'
+            value=''
+          />
+          <span class='custom-checkbox__icon'></span>
+          <span> Chocolate</span>
+          <input class='ice-count ice-count-chocolate' type='number' name='chocolate-quantity'>
+        </label>
+        <label class='custom-checkbox custom-checkbox--milk'>
+          <input
+            class='custom-checkbox__input'
+            type='checkbox'
+            name='milk'
+            value=''
+          />
+          <span class='custom-checkbox__icon'></span>
+          <span> Milk</span>
+          <input class='ice-count ice-count-milk' type='number' name='milk-quantity'>
+        </label>
+      </div>
 
       <button
-        class="modal-top-form__btn"
-        aria-label="Отправить форму"
-        type="submit"
+        class='modal-top-form__btn'
+        aria-label='Отправить форму'
+        type='submit'
       >
-        Submit
+        Make order
       </button>
     </form>
   </div>

@@ -35,6 +35,8 @@
 
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  border-radius: 15px;
 }
 
 .modal-top__icon {
@@ -139,7 +141,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 10px 55px;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
 
   font-family: inherit;
@@ -204,6 +206,7 @@
   display: flex;
   text-align: center;
   justify-content: center;
+  margin-right: 5px;
   min-width: 16px;
   max-height: 15px;
   width: 16px;
@@ -222,25 +225,68 @@
 
 .custom-checkbox {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 30px;
-  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  padding: 10px 10px;
+  width: 200px;
+  border-radius: 10px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
 
   color: var(--text-black);
+
+}
+
+.custom-checkbox--vanila {
+  background-color: navajowhite;
+}
+
+.custom-checkbox--chocolate {
+  background-color: #d2691e;
+}
+
+.custom-checkbox--milk {
+  background-color: mintcream;
 }
 
 .custom-checkbox__text {
   color: var(--brand-color);
 }
 
+.ice-count {
+  margin-left: 5px;
+  width: 40px;
+}
+
+.ice-count-vanila {
+  background-color: navajowhite;
+}
+
+.ice-count-chocolate {
+  background-color: chocolate;
+}
+
+.ice-count-milk {
+  background-color: mintcream;
+}
+
+
 @media screen and (min-width: 1200px) {
   .custom-checkbox {
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     font-size: 14px;
     line-height: 1.71;
   }
+
+  .check-box-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
 }
+
+
